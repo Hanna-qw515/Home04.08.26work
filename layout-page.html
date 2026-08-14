@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .header {
+            background-color: brown;
+            color: azure;
+            padding: 16px;
+            
+        }
+
+        .sidebar {
+            float: left;
+            width: 30%;
+            height: 100vh;
+            background-color: rgba(126, 252, 0, 0.575);
+        
+
+        }
+
+        a {
+            display: block;
+        }
+
+        .content {
+            float: right;
+            width: 70%;
+            height: 100vh;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+        
+
+        .wrapper::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .footer {
+            background-color: darkred;
+            color: azure;
+            padding: 20px;
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Cat cafe</div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <a>Menu</a>
+            <a>Cat</a>
+            <a>Foto</a>
+            <a>Offers</a>
+            <a>About us</a>
+        </div>
+        <div class="content">
+            <h2>Cat live</h2>
+             <img src="photo_2026-08-01.jpg" alt="Imige">
+            <p>Deserts</p>
+            <p>Vlog</p>
+
+        </div>
+        <div class="footer">@ 2026 Cat web</div>
+
+
+    </div>
+</body>
+
+</html>
